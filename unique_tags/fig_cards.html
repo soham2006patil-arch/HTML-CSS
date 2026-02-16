@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Figure Card Layout</title>
+
+<style>
+body{
+  font-family: Arial;
+  background:#f4f4f4;
+  padding:40px;
+}
+
+.card-container{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  justify-content:left;
+}
+
+figure{
+  width:250px;
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  margin:0;
+}
+
+figure img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+}
+
+figcaption{
+  padding:12px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card-container">
+
+    <figure>
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+        <figcaption>
+            <h3>Mountain View</h3>
+            <p>Beautiful landscape surrounded by nature.</p>
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df">
+        <figcaption>
+            <h3>City Lights</h3>
+            <p>Night view of a modern urban skyline.</p>
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+        <figcaption>
+            <h3>Ocean Breeze</h3>
+            <p>Relaxing beach with clear blue water.</p>
+        </figcaption>
+    </figure>
+
+</div>
+
+</body>
+</html>
